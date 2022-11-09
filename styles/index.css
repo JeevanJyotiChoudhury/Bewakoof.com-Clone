@@ -1,0 +1,233 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* css for top navbar */
+
+#maintopnav {
+  background-color: rgb(238, 238, 238);
+}
+
+#topnav {
+  /* border: 1px solid; */
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  font-size: 13px;
+}
+
+#divleft {
+  width: 30%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+#divright {
+  width: 15%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+#fullNav {
+  border-bottom: 1px solid rgb(187, 178, 178);
+  margin-bottom: 15px;
+}
+#mainnav {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+#leftmaindiv {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+}
+
+#categorydiv {
+  /* border: 1px solid green; */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#imgDiv {
+  height: 75%;
+  width: 75%;
+}
+#imgDiv img {
+  height: 100%;
+  width: 100%;
+}
+#rightmaindiv {
+  display: flex;
+  /* border: 1px dashed black; */
+  width: 40%;
+  justify-content: space-between;
+}
+#inputDiv {
+  width: 60%;
+  /* border: 1px dashed black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inputDiv input {
+  width: 91%;
+  height: 70%;
+  background-color: rgb(234, 234, 234);
+  border: none;
+}
+#inputDiv span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11%;
+  height: 73%;
+  background-color: rgb(234, 234, 234);
+}
+#iconsDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  /* border: 1px dashed black; */
+}
+
+#flag {
+  height: 40px;
+  width: 40px;
+}
+#flag img {
+  border-radius: 52%;
+  height: 100%;
+  width: 100%;
+}
+
+/* body div css */
+
+#bodyImg {
+  display: flex;
+}
+.bodyfull_img {
+  height: 70px;
+}
+.bodyfull_img img {
+  height: 100%;
+  width: 100%;
+}
+#bodyImg > div img{
+  width:100%;
+}
+
+/* footer css */
+#footerDiv {
+  background-color: rgb(24, 24, 24);
+  padding-bottom: 200px;
+}
+
+.container1 {
+  width: 85%;
+  margin: auto;
+  color: gold;
+  /* line-height: 1px; */
+}
+.container1 h1 {
+  margin-top: 10px;
+  padding-top: 50px;
+}
+.container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+  /* border: 1px solid yellow; */
+}
+
+#spanImg img {
+  width: 40%;
+}
+.container div p {
+  font-size: 13px;
+}
+.container2 {
+  display: flex;
+  margin-left: 100px;
+  width: 65%;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+.container2 div {
+  /* border: 1px solid greenyellow; */
+}
+.icons > span > i {
+  color: white;
+  margin-top: 15px;
+}
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  line-height: normal;
+}
+.footer1 > p {
+  color: gold;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  /* line-height: 23px; */
+}
+
+form input {
+  background-color: #181818;
+  border: transparent;
+  border-bottom: 1px solid gold;
+  font-size: 18px;
+}
+button {
+  background-color: gold;
+  border: transparent;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+i {
+  padding-right: 10px;
+}
+hr {
+  width: 85%;
+  justify-content: center;
+}
+h3 {
+  color: white;
+}
+h2 {
+  color: #51ccc4;
+}
+.description-row {
+  width: 85%;
+  margin: auto;
+}
+.description-row > p {
+  color: white;
+  line-height: 20px;
+}
