@@ -394,7 +394,8 @@ function displayMenData(menData) {
 function individualProduct(elem){
 prodArr.push(elem)
 console.log(prodArr);
-localStorage.setItem("product",JSON.stringify(prodArr))
+localStorage.setItem("product", JSON.stringify(prodArr));
+window.location.href='./productPage.html'
 }
 
 

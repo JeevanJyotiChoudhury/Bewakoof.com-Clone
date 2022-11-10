@@ -365,12 +365,15 @@ let hotDealData = [
     gender: "Unisex",
   },
 ];
-
+let prodArr = [];
 function displayhotDealData(hotDealData) {
   console.log(hotDealData);
   document.querySelector("#menData").innerText = "";
   hotDealData.map((elem) => {
     let mainDiv = document.createElement("div");
+     mainDiv.addEventListener("click", function () {
+       individualProduct(elem);
+     });
     let images = document.createElement("img");
     images.src = elem.image;
     let brand = document.createElement("p");
@@ -394,3 +397,10 @@ function displayhotDealData(hotDealData) {
 }
 
 displayhotDealData(hotDealData);
+function individualProduct(elem) {
+  prodArr.push(elem);
+  console.log(prodArr);
+  localStorage.setItem("product", JSON.stringify(prodArr));
+  window.location.href = "./productPage.html";
+}
+
