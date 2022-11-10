@@ -2,8 +2,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
 }
+
 
 /* css for top navbar */
 
@@ -72,8 +72,8 @@ body {
 }
 
 #imgDiv {
-  height: 80%;
-  width: 80%;
+  height: 75%;
+  width: 75%;
 }
 #imgDiv img {
   height: 100%;
@@ -124,21 +124,120 @@ body {
   width: 100%;
 }
 
-/* body div css */
-
-#bodyImg {
+/* CSS Body */
+#categories {
   display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
-.bodyfull_img {
-  height: 70px;
+#categories > div > a {
+  color: black;
 }
-.bodyfull_img img {
-  height: 100%;
+#categories > div > a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+#topSlider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+#topSlider > div > img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#topFullimg {
+  margin: 20px auto 20px;
+  width: 98%;
+}
+#topFullimg > img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#topDivData {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  width: 85%;
+  margin: auto;
+  gap: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#topDivData > div {
+  cursor: pointer;
+}
+#topDivData > div > img {
   width: 100%;
 }
-#bodyImg > div img{
-  width:100%;
+
+#freeGift > img {
+  width: 100%;
 }
+
+#categoryDesc > h3,
+#disDesc > h3,
+#bestSellDesc > h3,
+#stoopidDesc > h3 {
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+
+#popularCategories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  cursor: pointer;
+}
+
+#popularCategories > div > img {
+  width: 100%;
+}
+
+#disDesc {
+  font-size: 20px;
+}
+#discount {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  cursor: pointer;
+}
+
+#discount > div > img {
+  width: 100%;
+}
+
+#stoopidCollection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    cursor: pointer;
+}
+
+#stoopidCollection>div>img{
+    width: 100%;
+}
+
+#tribeExclusive{
+    width: 99%;
+    margin: auto;
+}
+#tribeExclusive>img{
+    width: 100%;
+}
+
+#vote>img{
+    width: 100%;
+}
+
 
 /* footer css */
 #footerDiv {
@@ -229,12 +328,4 @@ h3 {
 }
 h2 {
   color: #51ccc4;
-}
-.description-row {
-  width: 85%;
-  margin: auto;
-}
-.description-row > p {
-  color: white;
-  line-height: 20px;
 }
