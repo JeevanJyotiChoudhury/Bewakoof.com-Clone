@@ -1,0 +1,230 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* css for top navbar */
+
+#maintopnav {
+  background-color: rgb(238, 238, 238);
+}
+
+#topnav {
+  /* border: 1px solid; */
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  font-size: 13px;
+}
+
+#divleft {
+  width: 30%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+#divright {
+  width: 15%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+#fullNav {
+  border-bottom: 1px solid rgb(187, 178, 178);
+  margin-bottom: 15px;
+}
+#mainnav {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+#leftmaindiv {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+}
+
+#categorydiv {
+  /* border: 1px solid green; */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#categorydiv a {
+  color: black;
+}
+#categorydiv a:hover {
+  font-weight: bold;
+}
+
+#imgDiv {
+  height: 80%;
+  width: 80%;
+}
+#imgDiv img {
+  height: 100%;
+  width: 100%;
+}
+#rightmaindiv {
+  display: flex;
+  /* border: 1px dashed black; */
+  width: 40%;
+  justify-content: space-between;
+}
+#inputDiv {
+  width: 60%;
+  /* border: 1px dashed black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inputDiv input {
+  width: 91%;
+  height: 70%;
+  background-color: rgb(234, 234, 234);
+  border: none;
+}
+#inputDiv span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11%;
+  height: 73%;
+  background-color: rgb(234, 234, 234);
+}
+#iconsDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  /* border: 1px dashed black; */
+}
+#iconsDiv > div a {
+  color: black;
+}
+#flag {
+  height: 40px;
+  width: 40px;
+}
+#flag img {
+  border-radius: 52%;
+  height: 100%;
+  width: 100%;
+}
+
+/* Body CSS */
+#mainDiv {
+  display: flex;
+  justify-content: space-between;
+}
+#leftDiv {
+  width: 50%;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 28%,
+    rgba(255, 240, 213, 0.9920343137254902) 73%
+  );
+}
+#leftDiv>img{
+  width: 100%;
+}
+#welDiv {
+  width: 90%;
+  text-align: center;
+}
+#loginDiv {
+  width: 40%;
+  margin-right: 25px;
+}
+#loginDiv > h2,
+#loginDiv > h3 {
+  text-align: center;
+}
+#loginDiv > h3{
+  color: gray;
+}
+#mobile {
+  width: 80%;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+#btn {
+  width: 82%;
+  height: 50px;
+  margin: 0 auto 30px;
+}
+#btn > button {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(66, 162, 162);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+#signinType {
+  width: 80%;
+  margin: 30px auto 0;
+}
+#email > button {
+  width: 80%;
+  height: 35px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(82, 82, 82)
+}
+#google {
+  width: 39.5%;
+  margin-top: 25px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(82, 82, 82)
+}
+#facebook {
+  width: 39.5%;
+  margin-top: 5px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(82, 82, 82)
+}
+#bottomLoginDiv{
+  width: 80%;
+  margin: auto;
+}
+#terms{
+  font-size: 12px;
+  color: gray;
+  margin-top: 30px;
+}
+#terms>b{
+  color: rgb(66, 162, 162);
+}

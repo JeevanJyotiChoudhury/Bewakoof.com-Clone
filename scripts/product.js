@@ -30,14 +30,16 @@ function displayProduct(product) {
   let btn = document.createElement("button");
   btn.innerText = "Add to Bag";
   btn.addEventListener("click", function () {
-    addToCart(elem);
+    addToCart(product);
   });
   document.querySelector("#imageDiv").append(image);
   document.querySelector("#dataDiv").append(brand, desc, price, data, btn);
 }
 
-function addToCart(elem) {
-  cartArr.push(elem);
+function addToCart(product) {
+  cartArr.push(product);
   localStorage.setItem("cartItem", JSON.stringify(cartArr));
+  console.log(cartArr);
+  console.log(cartArr[0]);
 }
 displayProduct(product);
