@@ -353,51 +353,99 @@ let menData = [
   },
 ];
 
-let prodArr=[]
+document.querySelector("#sort").addEventListener("change", sortByPrice);
+document
+  .querySelector("#filterBtColor")
+  .addEventListener("change", filterBtColor);
+document.querySelector("#filterBySleeve").addEventListener("change", filterBySleeve);
+document.querySelector("#filterByNeck").addEventListener("change", filterByNeck);
+document.querySelector("#filterByRating").addEventListener("change", filterByRating);
+document
+  .querySelector("#filterByBrand")
+  .addEventListener("change", filterByBrand);
+let prodArr = [];
 function displayMenData(menData) {
-    console.log(menData);
-    document.querySelector("#menData").innerText = "";
-    menData.map((elem)=>{
-        let mainDiv = document.createElement("div");
-        mainDiv.addEventListener("click",function(){
-          individualProduct(elem)
-        })
-        let images = document.createElement("img");
-        images.src = elem.image;
-        let brand = document.createElement("p");
-        brand.innerText = elem.brand;
-        brand.setAttribute("id","brand")
-        let description = document.createElement("p");
-        description.innerText = elem.description;
-        description.setAttribute("id", "description");
-        let span=document.createElement('span');
-        span.innerText = "₹"+elem.price;
-        span.setAttribute("id","spanTag")
+  console.log(menData);
+  document.querySelector("#menData").innerText = "";
+  menData.map((elem) => {
+    let mainDiv = document.createElement("div");
+    mainDiv.addEventListener("click", function () {
+      individualProduct(elem);
+    });
+    let images = document.createElement("img");
+    images.src = elem.image;
+    let brand = document.createElement("p");
+    brand.innerText = elem.brand;
+    brand.setAttribute("id", "brand");
+    let description = document.createElement("p");
+    description.innerText = elem.description;
+    description.setAttribute("id", "description");
+    let span = document.createElement("span");
+    span.innerText = "₹" + elem.price;
+    span.setAttribute("id", "spanTag");
 
-        let strike_price = document.createElement("S");
-        strike_price.innerText = "₹"+elem.strike_price;
+    let strike_price = document.createElement("S");
+    strike_price.innerText = "₹" + elem.strike_price;
 
-        let rating = document.createElement("p");
-        rating.innerText = elem.rating + "★";
+    let rating = document.createElement("p");
+    rating.innerText = elem.rating + "★";
 
-        mainDiv.append(
-          images,
-          brand,
-          description,
-          span,strike_price,
-          rating
-        );
-        document.querySelector("#menData").append(mainDiv);
-    })
+    mainDiv.append(images, brand, description, span, strike_price, rating);
+    document.querySelector("#menData").append(mainDiv);
+  });
 }
 
-function individualProduct(elem){
-prodArr.push(elem)
-console.log(prodArr);
-localStorage.setItem("product", JSON.stringify(prodArr));
-window.location.href='./productPage.html'
+function individualProduct(elem) {
+  prodArr.push(elem);
+  localStorage.setItem("product", JSON.stringify(prodArr));
+  window.location.href = "./productPage.html";
 }
-
-
+let sortedArr;
+function sortByPrice() {
+  let value = document.querySelector("#sort").value;
+  if (value == "LTH") {
+    sortedArr = menData.sort((a, b) => a.price - b.price);
+  }
+  if (value == "HTL") {
+    sortedArr = menData.sort((a, b) => b.price - a.price);
+  }
+  displayMenData(sortedArr);
+}
+let filteredArr;
+function filterBtColor() {
+  let value = document.querySelector("#filterBtColor").value;
+  filteredArr=menData.filter((elem)=>{
+    return elem.color==value;
+  })
+  displayMenData(filteredArr);
+}
+function filterByBrand() {
+  let value = document.querySelector("#filterByBrand").value;
+  filteredArr = menData.filter((elem) => {
+    return elem.brand == value;
+  });
+  displayMenData(filteredArr);
+}
+function filterBySleeve() {
+  let value = document.querySelector("#filterBySleeve").value;
+  filteredArr = menData.filter((elem) => {
+    return elem.sleeve == value;
+  });
+  displayMenData(filteredArr);
+}
+function filterByNeck() {
+  let value = document.querySelector("#filterByNeck").value;
+  filteredArr = menData.filter((elem) => {
+    return elem.neck == value;
+  });
+  displayMenData(filteredArr);
+}
+function filterByRating() {
+  let value = document.querySelector("#filterByRating").value;
+  filteredArr = menData.filter((elem) => {
+    return elem.rating == value;
+  });
+  displayMenData(filteredArr);
+}
 
 displayMenData(menData);

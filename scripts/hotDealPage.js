@@ -366,6 +366,22 @@ let hotDealData = [
   },
 ];
 let prodArr = [];
+document.querySelector("#sort").addEventListener("change", sortByPrice);
+document
+  .querySelector("#filterBtColor")
+  .addEventListener("change", filterBtColor);
+document
+  .querySelector("#filterBySleeve")
+  .addEventListener("change", filterBySleeve);
+document
+  .querySelector("#filterByNeck")
+  .addEventListener("change", filterByNeck);
+document
+  .querySelector("#filterByRating")
+  .addEventListener("change", filterByRating);
+document
+  .querySelector("#filterByBrand")
+  .addEventListener("change", filterByBrand);
 function displayhotDealData(hotDealData) {
   console.log(hotDealData);
   document.querySelector("#menData").innerText = "";
@@ -404,3 +420,52 @@ function individualProduct(elem) {
   window.location.href = "./productPage.html";
 }
 
+
+
+let sortedArr;
+function sortByPrice() {
+  let value = document.querySelector("#sort").value;
+  if (value == "LTH") {
+    sortedArr = hotDealData.sort((a, b) => a.price - b.price);
+  }
+  if (value == "HTL") {
+    sortedArr = hotDealData.sort((a, b) => b.price - a.price);
+  }
+  displayhotDealData(sortedArr);
+}
+let filteredArr;
+function filterBtColor() {
+  let value = document.querySelector("#filterBtColor").value;
+  filteredArr = hotDealData.filter((elem) => {
+    return elem.color == value;
+  });
+  displayhotDealData(filteredArr);
+}
+function filterByBrand() {
+  let value = document.querySelector("#filterByBrand").value;
+  filteredArr = hotDealData.filter((elem) => {
+    return elem.brand == value;
+  });
+  displayhotDealData(filteredArr);
+}
+function filterBySleeve() {
+  let value = document.querySelector("#filterBySleeve").value;
+  filteredArr = hotDealData.filter((elem) => {
+    return elem.sleeve == value;
+  });
+  displayhotDealData(filteredArr);
+}
+function filterByNeck() {
+  let value = document.querySelector("#filterByNeck").value;
+  filteredArr = hotDealData.filter((elem) => {
+    return elem.neck == value;
+  });
+  displayhotDealData(filteredArr);
+}
+function filterByRating() {
+  let value = document.querySelector("#filterByRating").value;
+  filteredArr = hotDealData.filter((elem) => {
+    return elem.rating == value;
+  });
+  displayhotDealData(filteredArr);
+}
