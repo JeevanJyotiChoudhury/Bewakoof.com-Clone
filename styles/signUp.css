@@ -64,10 +64,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#categorydiv a{
-  color:black;
+#categorydiv a {
+  color: black;
 }
-#categorydiv a:hover{
+#categorydiv a:hover {
   font-weight: bold;
 }
 
@@ -113,8 +113,8 @@ body {
   width: 35%;
   /* border: 1px dashed black; */
 }
-#iconsDiv>div a{
-  color:black
+#iconsDiv > div a {
+  color: black;
 }
 #flag {
   height: 40px;
@@ -124,119 +124,4 @@ body {
   border-radius: 52%;
   height: 100%;
   width: 100%;
-}
-
-/* body div css */
-
-#bodyImg {
-  display: flex;
-}
-.bodyfull_img {
-  height: 70px;
-}
-.bodyfull_img img {
-  height: 100%;
-  width: 100%;
-}
-#bodyImg > div img{
-  width:100%;
-}
-
-/* footer css */
-#footerDiv {
-  background-color: rgb(24, 24, 24);
-  padding-bottom: 200px;
-}
-
-.container1 {
-  width: 85%;
-  margin: auto;
-  color: gold;
-  /* line-height: 1px; */
-}
-.container1 h1 {
-  margin-top: 10px;
-  padding-top: 50px;
-}
-.container {
-  display: flex;
-  width: 85%;
-  margin: auto;
-  justify-content: space-between;
-  /* border: 1px solid yellow; */
-}
-
-#spanImg img {
-  width: 40%;
-}
-.container div p {
-  font-size: 13px;
-}
-.container2 {
-  display: flex;
-  margin-left: 100px;
-  width: 65%;
-  justify-content: space-between;
-  /* border: 1px solid white; */
-}
-.container2 div {
-  /* border: 1px solid greenyellow; */
-}
-.icons > span > i {
-  color: white;
-  margin-top: 15px;
-}
-ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0;
-}
-ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-  line-height: normal;
-}
-.footer1 > p {
-  color: gold;
-}
-
-ul li {
-  list-style: none;
-  margin-bottom: 5px;
-  /* line-height: 23px; */
-}
-
-form input {
-  background-color: #181818;
-  border: transparent;
-  border-bottom: 1px solid gold;
-  font-size: 18px;
-}
-button {
-  background-color: gold;
-  border: transparent;
-  padding: 5px 15px;
-  cursor: pointer;
-}
-i {
-  padding-right: 10px;
-}
-hr {
-  width: 85%;
-  justify-content: center;
-}
-h3 {
-  color: white;
-}
-h2 {
-  color: #51ccc4;
-}
-.description-row {
-  width: 85%;
-  margin: auto;
-}
-.description-row > p {
-  color: white;
-  line-height: 20px;
 }

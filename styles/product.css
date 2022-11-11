@@ -1,12 +1,10 @@
-body {
-  padding: 0;
+/* navbar start */
+body{
+     padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
-
-/* css for top navbar */
-
 #maintopnav {
   background-color: rgb(238, 238, 238);
 }
@@ -63,11 +61,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
-#categorydiv a{
-  color:black;
+#categorydiv a {
+  color: black;
 }
-#categorydiv a:hover{
+#categorydiv a:hover {
   font-weight: bold;
 }
 
@@ -126,22 +125,65 @@ body {
   width: 100%;
 }
 
-/* body div css */
+/* navbr end */
 
-#bodyImg {
+#mainContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  /* border: 1px solid ; */
+}
+#imageDiv img {
+  width: 70%;
+}
+#dataDiv {
+  margin-top: 60px;
+}
+#sizeDiv {
   display: flex;
 }
-.bodyfull_img {
-  height: 70px;
-}
-.bodyfull_img img {
-  height: 100%;
-  width: 100%;
-}
-#bodyImg > div img{
-  width:100%;
-}
 
+#sizeDiv > div {
+  height: 50px;
+  width: 50px;
+  border: 1px solid teal;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: teal;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#sizeDiv > div:hover {
+  background-color: teal;
+  color: white;
+}
+#dataDiv button {
+  all: unset;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border: 2px solid teal;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+#dataDiv button:hover {
+  border: 1px solid teal;
+  color: teal;
+  background-color: white;
+  font-weight: bold;
+}
+#dataDiv p {
+  font-size: 17px;
+  color: grey;
+}
+#dataDiv h2,#dataDiv h3{
+    color:black;
+}
 /* footer css */
 #footerDiv {
   background-color: rgb(24, 24, 24);
@@ -231,12 +273,4 @@ h3 {
 }
 h2 {
   color: #51ccc4;
-}
-.description-row {
-  width: 85%;
-  margin: auto;
-}
-.description-row > p {
-  color: white;
-  line-height: 20px;
 }

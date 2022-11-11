@@ -113,7 +113,9 @@ body {
   width: 35%;
   /* border: 1px dashed black; */
 }
-
+#iconsDiv>div a{
+  color:black
+}
 #flag {
   height: 40px;
   width: 40px;

@@ -353,12 +353,15 @@ let menData = [
   },
 ];
 
-
+let prodArr=[]
 function displayMenData(menData) {
     console.log(menData);
     document.querySelector("#menData").innerText = "";
     menData.map((elem)=>{
         let mainDiv = document.createElement("div");
+        mainDiv.addEventListener("click",function(){
+          individualProduct(elem)
+        })
         let images = document.createElement("img");
         images.src = elem.image;
         let brand = document.createElement("p");
@@ -386,6 +389,13 @@ function displayMenData(menData) {
         );
         document.querySelector("#menData").append(mainDiv);
     })
+}
+
+function individualProduct(elem){
+prodArr.push(elem)
+console.log(prodArr);
+localStorage.setItem("product", JSON.stringify(prodArr));
+window.location.href='./productPage.html'
 }
 
 
