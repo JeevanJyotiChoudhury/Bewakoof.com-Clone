@@ -170,8 +170,7 @@ body {
   height: 50px;
   margin: 0 auto 30px;
 }
-#btn a button {
-  cursor: pointer;
+#btn > button {
   width: 100%;
   height: 100%;
   background-color: rgb(66, 162, 162);
@@ -185,19 +184,17 @@ body {
   width: 80%;
   margin: 30px auto 0;
 }
-#email a button {
-  cursor: pointer;
+#email > button {
   width: 80%;
   height: 35px;
   background-color: white;
   border: 1px solid grey;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   color: rgb(82, 82, 82)
 }
 #google {
-  cursor: pointer;
   width: 39.5%;
   margin-top: 25px;
   height: 35px;
@@ -205,11 +202,10 @@ body {
   border: 1px solid grey;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   color: rgb(82, 82, 82)
 }
 #facebook {
-  cursor: pointer;
   width: 39.5%;
   margin-top: 5px;
   height: 35px;
@@ -217,7 +213,7 @@ body {
   border: 1px solid grey;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   color: rgb(82, 82, 82)
 }
 #bottomLoginDiv{
@@ -230,5 +226,5 @@ body {
   margin-top: 30px;
 }
 #terms>b{
-  color: rgb(66, 162, 162);
+  color: rgb(66, 162, 162);
 }

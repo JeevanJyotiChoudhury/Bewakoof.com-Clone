@@ -20,11 +20,13 @@
         </div>
         <div>
           <p>Signed in as</p>
-          <p>Jeevan Jyoti Choudhury</p>
+          <p id="loginName"></p>
         </div>
       </div>
     </nav>
-    <h2 id="cartTotal"></h2>
+     <h1 id="empty"></h1>
+   <div id="cartBody">
+     <h2 id="cartTotal"></h2>
     <div id="bodyDiv">
       <div id="cartItemsDiv">
         <div id="freeDelivery">Yay!!You get FREE delivery in this order.</div>
@@ -67,10 +69,12 @@
             <p id="prc">₹4599</p>
           </div>
           <div id="continueBtn">
-            <a href="/login.html"><button>CONTINUE</button></a>
+            <button id="continueButton">CONTINUE</button>
           </div>
         </div>
     </div>
+   </div>
+   
   </body>
 </html>
 <script src="./scripts/cart.js"></script>

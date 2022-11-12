@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/otp.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="login-otp-total">
+
+        <div id="verify-part">
+            <h1>Verify with OTP</h1>
+            <p id="name"></p>
+            <p id="number"></p>
+            <p>Enter Otp </p>
+            <div id="flex-input">
+                <form action="">
+                    <input id="otp1" type="text" maxlength="1"><input id="otp2" type="text" maxlength="1"><input
+                        id="otp3" type="text" maxlength="1"><input id="otp4" type="text" maxlength="1">
+
+                </form>
+
+            </div>
+            <p class="otp-style-color">RESEND OTP</p>
+            <p class="otp-style-color">Login With Password</p>
+            <button id="login-otp-btn">LOGIN</button>
+
+        </div>
+
+    </div>
 </body>
 </html>
+<script src="/scripts/otp.js"></script>
