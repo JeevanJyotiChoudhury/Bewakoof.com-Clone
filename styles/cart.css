@@ -16,6 +16,10 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+#CartNav div img {
+  width: 70%;
+  
+}
 #bodyDiv {
   width: 80%;
   margin: auto;
@@ -64,7 +68,7 @@ nav {
 }
 #redeem span{
     color:red;
-    margin-left: 130px;
+    margin-left: 70px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -101,6 +105,7 @@ nav {
   width:60%;
 }
 #continueBtn button{
+  cursor: pointer;
   width:100%;
   padding:10px;
   border: none;

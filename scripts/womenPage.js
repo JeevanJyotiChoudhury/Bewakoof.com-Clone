@@ -358,6 +358,22 @@ let womenData = [
   },
 ];
 let prodArr = [];
+document.querySelector("#sort").addEventListener("change", sortByPrice);
+document
+  .querySelector("#filterBtColor")
+  .addEventListener("change", filterBtColor);
+document
+  .querySelector("#filterBySleeve")
+  .addEventListener("change", filterBySleeve);
+document
+  .querySelector("#filterByNeck")
+  .addEventListener("change", filterByNeck);
+document
+  .querySelector("#filterByRating")
+  .addEventListener("change", filterByRating);
+document
+  .querySelector("#filterByBrand")
+  .addEventListener("change", filterByBrand);
 function displayWomenData(womenData) {
   console.log(womenData);
   document.querySelector("#menData").innerText = "";
@@ -395,4 +411,53 @@ function individualProduct(elem) {
   console.log(prodArr);
   localStorage.setItem("product", JSON.stringify(prodArr));
   window.location.href = "./productPage.html";
+}
+
+
+let sortedArr;
+function sortByPrice() {
+  let value = document.querySelector("#sort").value;
+  if (value == "LTH") {
+    sortedArr = womenData.sort((a, b) => a.price - b.price);
+  }
+  if (value == "HTL") {
+    sortedArr = womenData.sort((a, b) => b.price - a.price);
+  }
+  displayWomenData(sortedArr);
+}
+let filteredArr;
+function filterBtColor() {
+  let value = document.querySelector("#filterBtColor").value;
+  filteredArr = womenData.filter((elem) => {
+    return elem.color == value;
+  });
+  displayWomenData(filteredArr);
+}
+function filterByBrand() {
+  let value = document.querySelector("#filterByBrand").value;
+  filteredArr = womenData.filter((elem) => {
+    return elem.brand == value;
+  });
+  displayWomenData(filteredArr);
+}
+function filterBySleeve() {
+  let value = document.querySelector("#filterBySleeve").value;
+  filteredArr = womenData.filter((elem) => {
+    return elem.sleeve == value;
+  });
+  displayWomenData(filteredArr);
+}
+function filterByNeck() {
+  let value = document.querySelector("#filterByNeck").value;
+  filteredArr = womenData.filter((elem) => {
+    return elem.neck == value;
+  });
+  displayWomenData(filteredArr);
+}
+function filterByRating() {
+  let value = document.querySelector("#filterByRating").value;
+  filteredArr = womenData.filter((elem) => {
+    return elem.rating == value;
+  });
+  displayWomenData(filteredArr);
 }

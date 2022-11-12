@@ -125,3 +125,128 @@ body {
   height: 100%;
   width: 100%;
 }
+
+/* body signup css */
+
+#total-signup-page {
+  width: 70%;
+  margin: auto;
+  /* height: 100vh; */
+  display: flex;
+  background-color: #fffdf5;
+}
+
+#total-signup-page > div {
+  flex: 1;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 180px; */
+}
+
+#total-signup-page .left-signup  {
+ background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 28%,
+    rgba(255, 240, 213, 0.9920343137254902) 73%
+  );
+  box-sizing: border-box;
+}
+#total-signup-page .left-signup img {
+  height: 470px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+#total-signup-page .right-signup {
+  display: flex;
+  justify-content: center;
+}
+
+#total-signup-page .right-signup > div {
+  display: grid;
+  height: 75%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 2% 10%;
+}
+
+#total-signup-page .right-signup > div input {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  padding: 15px 0;
+}
+
+#total-signup-page .right-signup > div button {
+  width: 80%;
+  display: flex;
+  border: none;
+  margin: auto;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  background-color: gray;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#checkbox-signup {
+  width: 15px;
+  height: 15px;
+  line-height: 1px;
+}
+
+.fullname {
+  position: absolute;
+  top: 290px;
+  color: gray;
+}
+
+.fullname-active {
+  top: 270px;
+  transition: ease-in-out;
+}
+
+.Mobile {
+  position: absolute;
+  top: 330px;
+  color: gray;
+}
+
+.Mobile-active {
+  top: 330px;
+  transition: ease-in-out;
+}
+
+.email {
+  position: absolute;
+  top: 400px;
+  color: gray;
+}
+
+.email-active {
+  top: 380px;
+  transition: ease-in-out;
+}
+
+.password {
+  position: absolute;
+  top: 450px;
+  color: gray;
+}
+
+.password-active {
+  top: 430px;
+  transition: ease-in-out;
+}
+#h3Text{
+  margin: 0;
+  padding: 0;
+}
