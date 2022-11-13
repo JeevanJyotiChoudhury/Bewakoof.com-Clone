@@ -1,0 +1,25 @@
+#address{
+    width:40%;
+    margin: auto;
+    padding: 10px;
+}
+input{
+    width:100%;
+    padding:10px 10px;
+    margin:10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+label{
+    font-size: 17px;
+
+}
+#addBtn{
+    all: unset;
+    font-size: 20px;
+    background-color: teal;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+}
+

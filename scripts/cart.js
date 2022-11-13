@@ -1,6 +1,7 @@
 let cartArr = JSON.parse(localStorage.getItem("cartItem"));
 console.log(cartArr);
 if (cartArr) {
+  document.querySelector("#cartImg").style.display = "none";
   if (cartArr.length > 0) {
     displayCartData(cartArr);
     function displayCartData(cartArr) {
@@ -68,11 +69,23 @@ if (cartArr) {
     document.querySelector("#prc").innerText = "₹" + (totalPrice - 270);
     document.querySelector("#cartTotal").innerText =
       "My Bag: " + cartArr.length + " Items";
+    
+    let cartPrice = totalPrice - 270;
+    localStorage.setItem("cartAmount", cartPrice);
   } else {
     document.querySelector("#cartBody").style.display = "none";
-    document.querySelector("#empty").innerText = "Cart is Empty";
+    document.querySelector("#empty").innerText = "Your Cart is Empty!!";
+    document.querySelector("#cartImg").style.display = "block";
+    document.querySelector("#continueShopping").innerText =
+      "Add items to your bag";
+    document.querySelector("#cartImg").src =
+      "https://www.kindpng.com/picc/m/174-1749396_empty-cart-your-cart-is-empty-hd-png.png";
   }
 } else {
   document.querySelector("#cartBody").style.display = "none";
-  document.querySelector("#empty").innerText = "Cart is Empty";
+  document.querySelector("#empty").innerText = "Your Cart is Empty!!";
+  document.querySelector("#cartImg").style.display = "block";
+  document.querySelector("#continueShopping").innerText = "Add items to your bag";
+  document.querySelector("#cartImg").src =
+    "https://www.kindpng.com/picc/m/174-1749396_empty-cart-your-cart-is-empty-hd-png.png";
 }

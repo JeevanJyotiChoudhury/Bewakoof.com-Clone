@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/checkout.css" />
+  </head>
+  <body>
+    <center><h1>Choose Your Payment Method</h1></center>
+    <div id="paymentDiv">
+      <div id="paymentOptions">
+        <div>
+          <div class="subDiv">
+            <div class="imgDiv">
+              <img
+                src="https://images.bewakoof.com/web/bank-card-fill-1645697857.svg"
+                alt=""
+              />
+            </div>
+            <div class="textDiv">Debit/Credit Card</div>
+          </div>
+        </div>
+        <div>
+          <div class="subDiv">
+            <div class="imgDiv">
+              <img
+                src="https://images.bewakoof.com/web/Group-1645705428.png"
+                alt=""
+              />
+            </div>
+            <div class="textDiv">Wallet</div>
+          </div>
+        </div>
+        <div>
+          <div class="subDiv">
+            <div class="imgDiv">
+              <img
+                src="https://images.bewakoof.com/web/upi-icon-1645705429.png"
+                alt=""
+              />
+            </div>
+            <div class="textDiv">UPI</div>
+          </div>
+        </div>
+        <div>
+          <div class="subDiv">
+            <div class="imgDiv">
+              <img
+                src="https://images.bewakoof.com/web/nb-icon-1645705428.png"
+                alt=""
+              />
+            </div>
+            <div class="textDiv">Net Banking</div>
+          </div>
+        </div>
+        <div>
+          <div class="subDiv">
+            <div class="imgDiv">
+              <img
+                src="https://images.bewakoof.com/web/cod-icon-1645705427.png"
+                alt=""
+              />
+            </div>
+            <div class="textDiv" id="checkout">Cash on Delivery</div>
+          </div>
+        </div>
+      </div>
+      <div id="cardDiv">
+        <div id="cardImgDiv">
+          <img src="https://images.bewakoof.com/web/ic-visa-gray-payment-v1.jpg" alt=""  width="7%"/>
+          <img src="https://images.bewakoof.com/web/ic-master-card-payment-v1.jpg" alt="" width="7%" />
+          <img src="https://images.bewakoof.com/web/ic-rupay-payment-v1.jpg" alt=""  width="7%"/>
+          <img src="https://images.bewakoof.com/web/ic-american-express-payment-v1.jpg" alt="" width="7%"/>
+        </div>
+        <div>
+            <input type="number" placeholder="Card Holder Number">
+        </div>
+        <div>
+            <input type="date" placeholder="Valid Through">
+        </div>
+        <div>
+            <input type="text" placeholder="Card Holder Name">
+        </div>
+        <div id="textDiv">
+            <p>This transaction you make is totally secure. We don't save your CVV number.</p>
+        </div>
+        <div>
+            <center>
+                <a href="./payment.html"><button id="totalAmount"></button></a>
+            </center>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
+<script src="./scripts/checkout.js"></script>

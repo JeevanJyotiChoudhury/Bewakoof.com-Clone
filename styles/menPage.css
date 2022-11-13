@@ -9,6 +9,16 @@ body {
 
 #maintopnav {
   background-color: rgb(238, 238, 238);
+  position: sticky;
+  padding: 5px 0;
+  top: 0;
+}
+#fullNav {
+  border-bottom: 1px solid rgb(187, 178, 178);
+  margin-bottom: 15px;
+  position: sticky;
+  top: 32px;
+  background-color: white;
 }
 
 #topnav {
@@ -20,7 +30,9 @@ body {
   height: 25px;
   font-size: 13px;
 }
-
+#topnav>div{
+  cursor: pointer;
+}
 #divleft {
   width: 30%;
   /* border: 1px solid red; */
@@ -38,10 +50,7 @@ body {
   align-items: center;
   height: auto;
 }
-#fullNav {
-  border-bottom: 1px solid rgb(187, 178, 178);
-  margin-bottom: 15px;
-}
+
 #mainnav {
   width: 85%;
   margin: auto;
@@ -115,7 +124,11 @@ body {
   /* border: 1px dashed black; */
 }
 #iconsDiv>div a{
-  color:black
+  color:black;
+  text-decoration:none;
+}
+#iconsDiv>div{
+  cursor: pointer;
 }
 #flag {
   height: 40px;
@@ -131,6 +144,7 @@ body {
 
 #offer>img{
     width: 100%;
+    cursor: pointer;
 }
 #sortingDiv{
     display:flex;
@@ -160,6 +174,12 @@ body {
     /* border: 1px solid blue; */
 
 }
+#filter>div>select{
+  cursor: pointer;
+}
+#sortingDiv>div>select{
+  cursor: pointer;
+}
 #menData{
     width:70%;
     
@@ -169,7 +189,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
+#menData>div{
+  cursor: pointer;
+}
 #menData>div img{
     width: 100%;
 }
@@ -248,6 +270,10 @@ ul li a {
   color: white;
   font-size: 12px;
   line-height: normal;
+}
+ul li a:hover {
+  font-size: 15px;
+  font-weight: bold;
 }
 .footer1 > p {
   color: gold;
