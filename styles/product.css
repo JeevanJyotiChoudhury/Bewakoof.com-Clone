@@ -1,12 +1,22 @@
 /* navbar start */
-body{
-     padding: 0;
+body {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
 #maintopnav {
   background-color: rgb(238, 238, 238);
+  position: sticky;
+  padding: 5px 0;
+  top: 0;
+}
+#fullNav {
+  border-bottom: 1px solid rgb(187, 178, 178);
+  margin-bottom: 15px;
+  position: sticky;
+  top: 32px;
+  background-color: white;
 }
 
 #topnav {
@@ -18,7 +28,9 @@ body{
   height: 25px;
   font-size: 13px;
 }
-
+#topnav>div>p{
+  cursor: pointer;
+}
 #divleft {
   width: 30%;
   /* border: 1px solid red; */
@@ -36,10 +48,7 @@ body{
   align-items: center;
   height: auto;
 }
-#fullNav {
-  border-bottom: 1px solid rgb(187, 178, 178);
-  margin-bottom: 15px;
-}
+
 #mainnav {
   width: 85%;
   margin: auto;
@@ -112,8 +121,12 @@ body{
   width: 35%;
   /* border: 1px dashed black; */
 }
-#iconsDiv>div a{
-  color:black
+#iconsDiv > div{
+  cursor: pointer;
+}
+#iconsDiv > div a {
+  color: black;
+  text-decoration: none;
 }
 #flag {
   height: 40px;
@@ -181,8 +194,9 @@ body{
   font-size: 17px;
   color: grey;
 }
-#dataDiv h2,#dataDiv h3{
-    color:black;
+#dataDiv h2,
+#dataDiv h3 {
+  color: black;
 }
 /* footer css */
 #footerDiv {
@@ -238,6 +252,10 @@ ul li a {
   color: white;
   font-size: 12px;
   line-height: normal;
+}
+ul li a:hover {
+  font-size: 15px;
+  font-weight: bold;
 }
 .footer1 > p {
   color: gold;

@@ -1,0 +1,72 @@
+#paymentDiv{
+    width:60%;
+    margin:40px auto 0;
+    display:flex;
+    justify-content: space-between;
+}
+#paymentOptions{
+    width:40%;
+}
+#paymentOptions>div{
+    padding:10px 0;
+    background-color: rgb(228, 227, 227);
+    cursor: pointer;
+}
+.subDiv{
+    margin:5px 20px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.imgDiv{
+    width:10%;
+
+}
+.imgDiv img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+
+.textDiv{
+    width:85%;
+        margin:0;
+        padding:10px 0;
+        font-size: 16px;
+       
+}
+#paymentOptions>div:hover{
+    background-color: white;
+    color:grey;
+}
+#cardDiv{
+width:60%;
+}
+
+#cardImgDiv{
+    padding:20px 0;
+}
+#cardImgDiv img{
+    margin-left: 20px;
+}
+
+#cardDiv>div>input{
+    width:80%;
+    height:60px;
+    margin-left: 50px;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    border-bottom: 1px solid grey ;
+}
+#textDiv{
+    padding:10px 50px;
+}
+#totalAmount{
+    width:80%;
+    padding: 15px 0;
+    border: none;
+    background-color: grey;
+    color:white;
+    font: 20px;
+}

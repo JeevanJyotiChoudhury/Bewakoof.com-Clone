@@ -9,6 +9,16 @@ body {
 
 #maintopnav {
   background-color: rgb(238, 238, 238);
+  position: sticky;
+  padding: 5px 0;
+  top: 0;
+}
+#fullNav {
+  border-bottom: 1px solid rgb(187, 178, 178);
+  margin-bottom: 15px;
+  position: sticky;
+  top: 32px;
+  background-color: white;
 }
 
 #topnav {
@@ -38,10 +48,7 @@ body {
   align-items: center;
   height: auto;
 }
-#fullNav {
-  border-bottom: 1px solid rgb(187, 178, 178);
-  margin-bottom: 15px;
-}
+
 #mainnav {
   width: 85%;
   margin: auto;
@@ -113,8 +120,9 @@ body {
   width: 35%;
   /* border: 1px dashed black; */
 }
-#iconsDiv > div a {
-  color: black;
+#iconsDiv>div a{
+  color:black;
+  text-decoration:none;
 }
 #flag {
   height: 40px;

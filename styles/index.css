@@ -9,6 +9,16 @@ body {
 
 #maintopnav {
   background-color: rgb(238, 238, 238);
+  position: sticky;
+  padding: 5px 0;
+  top: 0;
+}
+#fullNav {
+  border-bottom: 1px solid rgb(187, 178, 178);
+  margin-bottom: 15px;
+  position: sticky;
+  top: 32px;
+  background-color: white;
 }
 
 #topnav {
@@ -19,6 +29,9 @@ body {
   justify-content: space-between;
   height: 25px;
   font-size: 13px;
+}
+#topnav>div>p{
+  cursor: pointer;
 }
 
 #divleft {
@@ -38,16 +51,13 @@ body {
   align-items: center;
   height: auto;
 }
-#fullNav {
-  border-bottom: 1px solid rgb(187, 178, 178);
-  margin-bottom: 15px;
-}
+
 #mainnav {
   width: 85%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 #leftmaindiv {
@@ -64,10 +74,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#categorydiv a{
-  color:black;
+#categorydiv a {
+  color: black;
 }
-#categorydiv a:hover{
+#categorydiv a:hover {
   font-weight: bold;
 }
 
@@ -113,8 +123,12 @@ body {
   width: 35%;
   /* border: 1px dashed black; */
 }
-#iconsDiv>div a{
-  color:black
+#iconsDiv>div{
+  cursor: pointer;
+}
+#iconsDiv > div a {
+  color: black;
+  text-decoration: none;
 }
 #flag {
   height: 40px;
@@ -138,8 +152,9 @@ body {
   height: 100%;
   width: 100%;
 }
-#bodyImg > div img{
-  width:100%;
+#bodyImg > div img {
+  width: 100%;
+  cursor: pointer;
 }
 
 /* footer css */
@@ -179,9 +194,7 @@ body {
   justify-content: space-between;
   /* border: 1px solid white; */
 }
-.container2 div {
-  /* border: 1px solid greenyellow; */
-}
+
 .icons > span > i {
   color: white;
   margin-top: 15px;
@@ -196,6 +209,10 @@ ul li a {
   color: white;
   font-size: 12px;
   line-height: normal;
+}
+ul li a:hover {
+  font-size: 15px;
+  font-weight: bold;
 }
 .footer1 > p {
   color: gold;
